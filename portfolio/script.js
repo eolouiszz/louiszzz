@@ -4,5 +4,5 @@ function link1() {
 }
 
 function link2() {
-    window.location.href = 'https://www.instagram.com/louuis.c/'
+    window.location.href = 'https://www.instagram.com/louuis.csharp/'
 }
