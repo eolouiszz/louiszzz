@@ -88,7 +88,7 @@ body {
     font-size: 80px;
 }
 
-#crud, #todo {
+#crud, #todo, #clima {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -103,7 +103,7 @@ body {
     transition: all 0.25s ease;
 }
 
-#crud:hover, #todo:hover {
+#crud:hover, #todo:hover, #clima:hover {
     background: #00bfff;
     color: #fff;
     transform: translateY(-4px) scale(1.03);
