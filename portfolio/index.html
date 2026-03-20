@@ -1,30 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Louis • Portfolio</title>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-
 </head>
+
 <body>
-  <img id="bg-gif" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3FwYnQ3bWJudm5vajlrNDNxM2VqYXd1cjQ2NGk4eXFlcjRoeGVwNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ySglJrfPWVpK8QyN3v/giphy.gif">
+
+  <img id="bg-gif"
+    src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3FwYnQ3bWJudm5vajlrNDNxM2VqYXd1cjQ2NGk4eXFlcjRoeGVwNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ySglJrfPWVpK8QyN3v/giphy.gif">
+
   <div class="container">
     <div class="glass-panel">
-      <nav class="navbar navbar-expand-lg mb-2">
+
+      <nav class="navbar navbar-expand-lg mb-5">
         <div class="container-fluid">
 
           <a class="navbar-brand" href="#">Portfolio</a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarContent" aria-controls="navbarContent"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -53,8 +59,10 @@
         <h1>Olá 👋</h1>
         <p>Bem-vindo ao meu portfólio.</p>
       </div>
+
     </div>
 
+    <!-- SOBRE -->
     <div class="modal fade" id="sobreModal" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -67,11 +75,15 @@
           <div class="modal-body">
             <p>
               Olá! 👋 Sou o Louis, desenvolvedor apaixonado por tecnologia e criação de projetos.<br>
-              Atualmente estudo cibersegurança, desenvolvimento de jogos de plataforma no roblox, design, modelagem 3d,
-              desenvolvimento web, irei fazer um curso tecnico de rede de computadores enquanto faço o ensino medio, e
-              pretendo fazer ADS na faculdade futuramente.<br> ate o ensino medio pretendo fazer mais projetos, e
-              aprender muito mais.<br><br><br><br>
-              <\See you later... Louis! />
+              Atualmente estudo cibersegurança, desenvolvimento de jogos no Roblox, design, modelagem 3D
+              e desenvolvimento web.<br>
+              Pretendo fazer um curso técnico em redes de computadores enquanto faço o ensino médio
+              e futuramente ADS na faculdade.<br>
+              Até lá, quero criar muitos projetos e evoluir cada vez mais.<br><br>
+
+              <span style="opacity:0.6; font-style: italic;">
+                &lt;See you later... Louis! /&gt;
+              </span>
             </p>
           </div>
 
@@ -79,6 +91,7 @@
       </div>
     </div>
 
+    <!-- PROJETOS -->
     <div class="modal fade" id="projetosModal" tabindex="-1">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
@@ -89,23 +102,15 @@
           </div>
 
           <div class="modal-body">
-
             <div class="row g-3">
-              <div class="col-md-4">
                 <a id="crud" href="https://crud-louis.onrender.com/" target="_blank">CRUD</a>
-              </div>
-            </div>
-            <div class="row g-3">
-              <div class="col-md-4">
                 <a id="todo" href="https://todo-louis.vercel.app/" target="_blank">ToDo List</a>
-              </div>
             </div>
           </div>
 
         </div>
       </div>
     </div>
-
     <div class="modal fade" id="contatoModal" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -121,31 +126,30 @@
               <i class="fa-brands fa-github"></i> GitHub
             </a>
 
-            <a href="https://discord.com/users/1209359068167151678"  class="btn btn-outline-dark m-1">
+            <a href="https://discord.com/users/1209359068167151678" class="btn btn-outline-dark m-1">
               <i class="fa-brands fa-discord"></i> Discord
             </a>
 
-            <a href="https://www.roblox.com/pt/users/7033078101/profile"
-              class="btn btn-outline-dark m-1">
+            <a href="https://www.roblox.com/pt/users/7033078101/profile" class="btn btn-outline-dark m-1">
               <i class="fa-solid fa-cube"></i> Roblox
             </a>
 
-            <a href="https://instagram.com/lou1sdeb/" class="btn btn-outline-dark m-1">
+            <a href="https://instagram.com/lou1sdeb/" target="_blank" class="btn btn-outline-dark m-1">
               <i class="fa-brands fa-instagram"></i> Instagram
             </a>
-            
-            <a href="https://tryhackme.com/p/Luizinho" class="btn btn-outline-dark m-1">
-              <img src="https://cdn.simpleicons.org/tryhackme/000000" alt="TryHackMe"
-                style="width:18px; height:18px; vertical-align:-3px; margin-right:10px;">
+
+            <a href="https://tryhackme.com/p/Luizinho" target="_blank" class="btn btn-outline-dark m-1">
+              <img src="https://cdn.simpleicons.org/tryhackme/000000"
+                style="width:18px; margin-right:8px;">
               TryHackMe
             </a>
 
           </div>
 
-
         </div>
       </div>
     </div>
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
