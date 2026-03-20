@@ -105,13 +105,42 @@ body {
     box-shadow: 0 10px 25px rgba(0,191,255,.35);
 }
 
+#todo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 10px 18px;
+    border-radius: 12px;
+
+    background: rgba(0,191,255,0.08);
+    border: 1px solid rgba(0,191,255,0.4);
+
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 
+        transform .2s ease,
+        box-shadow .2s ease,
+        background .2s ease;
+}
+
+#todo:hover {
+    background: #00bfff;
+    color: #fff;
+
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,191,255,.35);
+}
+
 .modal-title {
     color: black;
 }
 
 @keyframes slideIn {
     0% {
-        transform: translateY(-350%);
+        transform: translateY(-300%);
         opacity: 0;
     }
 
@@ -146,4 +175,51 @@ body {
 .glass-panel{
     position: relative;
     z-index: 1;
+}
+
+.navbar-collapse {
+    transition: all 0.2s ease;
+}
+
+.navbar-collapse.show {
+    animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0.5;
+        transform: translateY(-1px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar-nav .nav-item {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.navbar-collapse.show .nav-item {
+    animation: fadeItem 0.2s forwards;
+}
+
+.navbar-collapse.show .nav-item:nth-child(1) { animation-delay: 0.1s; }
+.navbar-collapse.show .nav-item:nth-child(2) { animation-delay: 0.2s; }
+.navbar-collapse.show .nav-item:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes fadeItem {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar-toggler {
+    transition: 0.3s;
+}
+
+.navbar-toggler[aria-expanded="true"] {
+    transform: rotate(183deg);
 }
