@@ -2,155 +2,219 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Louis • Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louis • Portfolio</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#sidebarMenu">
 
-  <img id="bg-gif"
-    src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3FwYnQ3bWJudm5vajlrNDNxM2VqYXd1cjQ2NGk4eXFlcjRoeGVwNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ySglJrfPWVpK8QyN3v/giphy.gif">
-
-  <div class="container">
-    <div class="glass-panel">
-
-      <nav class="navbar navbar-expand-lg mb-5">
+    <nav class="navbar navbar-dark bg-dark d-md-none fixed-top">
         <div class="container-fluid">
-
-          <a class="navbar-brand" href="#">Portfolio</a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarContent" aria-controls="navbarContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav ms-auto">
-
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#sobreModal">Sobre</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#projetosModal">Projetos</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contatoModal">Contato</a>
-              </li>
-
-            </ul>
-          </div>
-
+            <a class="navbar-brand fw-bold" href="#">LOUIS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
-      </nav>
+    </nav>
 
-      <div class="text-center main-text">
-        <h1>Olá 👋</h1>
-        <p>Bem-vindo ao meu portfólio.</p>
-      </div>
+    <div class="dashboard-container">
 
-    </div>
-    <div class="modal fade" id="sobreModal" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-
-          <div class="modal-header">
-            <h5 class="modal-title">Sobre</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-
-          <div class="modal-body">
-            <p>
-              Olá! 👋 Sou o Louis, desenvolvedor apaixonado por tecnologia e criação de projetos.<br>
-              Atualmente estudo cibersegurança, desenvolvimento de jogos no Roblox, design, modelagem 3D
-              e desenvolvimento web.<br>
-              Pretendo fazer um curso técnico em redes de computadores enquanto faço o ensino médio
-              e futuramente ADS na faculdade.<br>
-              Até lá, quero criar muitos projetos e evoluir cada vez mais.<br><br>
-
-              <span style="opacity:0.6; font-style: italic;">
-                &lt;See you later... Louis! /&gt;
-              </span>
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="projetosModal" tabindex="-1">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-
-          <div class="modal-header">
-            <h5 class="modal-title">Projetos</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-
-          <div class="modal-body">
-            <div class="row g-3">
-                <a id="crud" href="https://crud-louis.onrender.com/" target="_blank">CRUD</a>
-                <a id="todo" href="https://todo-louis.vercel.app/" target="_blank">ToDo List</a>
-                <a id="clima" href="https://clima-louis.onrender.com/" target="_blank">Clima</a>
-                <a id="contador" href="https://contador-js-psi.vercel.app/" target="_blank">ContadorV1.1</a>
+        <aside class="offcanvas-md offcanvas-start sidebar text-bg-dark" tabindex="-1" id="sidebarMenu">
+            <div class="offcanvas-header d-md-none border-bottom border-secondary mb-3">
+                <h5 class="offcanvas-title text-white">Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    data-bs-target="#sidebarMenu"></button>
             </div>
-          </div>
 
-        </div>
-      </div>
+            <div class="sidebar-content">
+                <div class="profile-section">
+                    <img class="avatar" src="https://i.pinimg.com/1200x/84/fc/ea/84fcead2130a14b62321eecc3d1eac53.jpg"
+                        alt="Louis Avatar">
+                    <h3 class="fw-bold mt-2 text-white">LOUIS</h3>
+                    <p class="small opacity-75 text-white">Developer & Student</p>
+                </div>
+
+                <nav class="sidebar-nav">
+                    <a href="#home" class="nav-item"><i class="fa-solid fa-house"></i> <span>Home</span></a>
+                    <a href="#sobre" class="nav-item"><i class="fa-solid fa-address-card"></i> <span>Sobre</span></a>
+                    <a href="#projetos" class="nav-item"><i class="fa-solid fa-code"></i> <span>Projetos</span></a>
+                    <a href="#skills" class="nav-item"><i class="fa-solid fa-layer-group"></i> <span>Skills</span></a>
+
+                    <hr class="mx-3 opacity-25">
+
+                    <a href="https://github.com/eolouiszz" target="_blank" class="nav-item">
+                        <i class="fa-brands fa-github"></i> <span>GitHub</span>
+                    </a>
+                    <a href="https://www.instagram.com/lou1sdeb/" target="_blank" class="nav-item">
+                        <i class="fa-brands fa-instagram"></i> <span>Instagram</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="content-area">
+
+            <section id="home" class="section-padding pt-md-0 pt-5">
+                <header class="content-header mb-4">
+                    <h2 class="fw-bold">Dashboard Overview</h2>
+                </header>
+                <div class="stats-grid">
+                    <div class="stat-card glass">
+                        <img src="https://github-readme-streak-stats.herokuapp.com/?user=eolouiszz&theme=tokyonight&hide_border=true"
+                            class="stats-img" alt="Streak">
+                    </div>
+                    <div class="stat-card glass">
+                        <img src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=eolouiszz&layout=compact&theme=tokyonight&hide_border=true"
+                            class="stats-img" alt="Langs">
+                    </div>
+                </div>
+            </section>
+
+            <section id="sobre" class="section-padding scroll-margin">
+                <div class="glass p-4">
+                    <h3 class="fw-bold"><i class="fa-solid fa-user-tag me-2 text-primary"></i> Sobre Mim</h3>
+                    <div class="mt-3">
+                        <p>Olá, eu sou <strong>Louis</strong> 👋.</p>
+                        <p>Sou desenvolvedor focado em <strong>Front-end, Back-end, APIs e Cybersegurança</strong>.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projetos" class="section-padding scroll-margin">
+                <div class="glass p-4">
+                    <h3 class="mb-4 fw-bold"><i class="fa-solid fa-folder-open me-2 text-primary"></i> Projetos</h3>
+                    <div class="row g-3">
+                        <div class="col-6 col-md-3">
+                            <a href="https://crud-louis.onrender.com/" target="_blank"
+                                class="project-card d-flex flex-column align-items-center text-decoration-none py-3 text-center">
+                                <i class="fa-solid fa-database mb-2 text-primary"></i>
+                                <span class="small fw-bold">CRUD</span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <a href="https://todo-louis.vercel.app/" target="_blank"
+                                class="project-card d-flex flex-column align-items-center text-decoration-none py-3 text-center">
+                                <i class="fa-solid fa-list-check mb-2 text-success"></i>
+                                <span class="small fw-bold">ToDo List</span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <a href="https://clima-louis.onrender.com/" target="_blank"
+                                class="project-card d-flex flex-column align-items-center text-decoration-none py-3 text-center">
+                                <i class="fa-solid fa-cloud-sun mb-2 text-info"></i>
+                                <span class="small fw-bold">Clima</span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <a href="https://contador-js-psi.vercel.app/" target="_blank"
+                                class="project-card d-flex flex-column align-items-center text-decoration-none py-3 text-center">
+                                <i class="fa-solid fa-stopwatch mb-2 text-warning"></i>
+                                <span class="small fw-bold">Contador</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section-padding scroll-margin">
+                <div class="glass p-4">
+                    <h3 class="fw-bold"><i class="fa-solid fa-microchip me-2 text-primary"></i> Tech Stack & Tools</h3>
+
+                    <div class="row g-5 mt-2">
+                        <div class="col-lg-7">
+                            <div class="skill-group mb-5">
+                                <h6 class="text-muted small text-uppercase fw-bold border-bottom pb-2">Linguagens &
+                                    Frameworks</h6>
+                                <div class="icons-row">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                                        title="JavaScript">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                                        title="Python">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+                                        title="Java">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg"
+                                        title="Lua">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                                        title="React">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg"
+                                        title="Bootstrap">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg"
+                                        title="Flask" class="icon-dark">
+                                </div>
+                            </div>
+
+                            <div class="skill-group mb-5">
+                                <h6 class="text-muted small text-uppercase fw-bold border-bottom pb-2">Ferramentas &
+                                    Design</h6>
+                                <div class="icons-row">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
+                                        title="Git">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/blender/blender-original.svg"
+                                        title="Blender">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-plain.svg"
+                                        title="Photoshop">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sqlite/sqlite-original.svg"
+                                        title="SQLite">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+                                        title="Linux">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/debian/debian-original.svg"
+                                        title="Debian">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"
+                                        title="VS Code">
+                                </div>
+                            </div>
+
+                            <div class="skill-group">
+                                <h6 class="text-muted small text-uppercase fw-bold border-bottom pb-2">Cybersecurity &
+                                    Pentest</h6>
+                                <div class="icons-row">
+                                    <img src="https://img.icons8.com/?size=96&id=9b5wowKIlo9d&format=png" title="Nmap">
+                                    <img src="https://img.icons8.com/?size=96&id=97AFS4JiW8vx&format=png"
+                                        title="Metasploit">
+                                    <img src="https://images.icon-icons.com/3053/PNG/512/burp_suite_macos_bigsur_icon_190319.png"
+                                        title="Burp Suite">
+                                    <img src="https://www.kali.org/tools/nikto/images/nikto-logo.svg" title="Nikto">
+                                    <img src="https://ubuntuhandbook.org/wp-content/uploads/2025/02/wireshark-logo-1.webp"
+                                        title="Wireshark">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5">
+                            <h6 class="text-muted small text-uppercase fw-bold mb-3">Roadmap / Foco</h6>
+                            <div class="roadmap-grid">
+                                <div class="roadmap-item">
+                                    <i class="fa-solid fa-check-circle text-success"></i>
+                                    <div><span class="d-block fw-bold small">Finalizado</span><span
+                                            class="text-muted extra-small">Fundamentos de Redes</span></div>
+                                </div>
+                                <div class="roadmap-item">
+                                    <i class="fa-solid fa-circle-notch fa-spin text-primary"></i>
+                                    <div><span class="d-block fw-bold small">Estudando</span><span
+                                            class="text-muted extra-small">Java Spring Boot & API</span></div>
+                                </div>
+                                <div class="roadmap-item">
+                                    <i class="fa-solid fa-bullseye text-danger"></i>
+                                    <div><span class="d-block fw-bold small">Próximo Alvo</span><span
+                                            class="text-muted extra-small">Certificação Security+</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
-    <div class="modal fade" id="contatoModal" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
 
-          <div class="modal-header">
-            <h5 class="modal-title">Contato</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-
-          <div class="modal-body">
-
-            <a href="https://github.com/eolouiszz" target="_blank" class="btn btn-outline-dark m-1">
-              <i class="fa-brands fa-github"></i> GitHub
-            </a>
-
-            <a href="https://discord.com/users/1209359068167151678" class="btn btn-outline-dark m-1">
-              <i class="fa-brands fa-discord"></i> Discord
-            </a>
-
-            <a href="https://www.roblox.com/pt/users/7033078101/profile" class="btn btn-outline-dark m-1">
-              <i class="fa-solid fa-cube"></i> Roblox
-            </a>
-
-            <a href="https://instagram.com/lou1sdeb/" target="_blank" class="btn btn-outline-dark m-1">
-              <i class="fa-brands fa-instagram"></i> Instagram
-            </a>
-
-            <a href="https://tryhackme.com/p/Luizinho" target="_blank" class="btn btn-outline-dark m-1">
-              <img src="https://cdn.simpleicons.org/tryhackme/000000"
-                style="width:18px; margin-right:8px;">
-              TryHackMe
-            </a>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
