@@ -4,21 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Louis • Portfolio</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body data-bs-spy="scroll" data-bs-target="#sidebarMenu">
 
+    <!-- Navbar Mobile -->
     <nav class="navbar navbar-dark bg-dark d-md-none fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#">LOUIS</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu">
+
+            <a class="navbar-brand fw-bold" href="#">
+                LOUIS
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#sidebarMenu">
+
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
@@ -26,186 +43,374 @@
 
     <div class="dashboard-container">
 
-        <aside class="offcanvas-md offcanvas-start sidebar text-bg-dark" tabindex="-1" id="sidebarMenu">
+        <!-- Sidebar -->
+        <aside class="offcanvas-md offcanvas-start sidebar text-bg-dark"
+            tabindex="-1"
+            id="sidebarMenu">
+
             <div class="offcanvas-header d-md-none border-bottom border-secondary mb-3">
-                <h5 class="offcanvas-title text-white">Menu</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                    data-bs-target="#sidebarMenu"></button>
+
+                <h5 class="offcanvas-title text-white">
+                    Menu
+                </h5>
+
+                <button type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas"
+                    data-bs-target="#sidebarMenu">
+                </button>
             </div>
 
             <div class="sidebar-content">
+
+                <!-- Perfil -->
                 <div class="profile-section">
-                    <img class="avatar" src="https://i.pinimg.com/1200x/84/fc/ea/84fcead2130a14b62321eecc3d1eac53.jpg"
+
+                    <img class="avatar"
+                        src="https://i.pinimg.com/1200x/84/fc/ea/84fcead2130a14b62321eecc3d1eac53.jpg"
                         alt="Louis Avatar">
-                    <h3 class="fw-bold mt-2 text-white">LOUIS</h3>
-                    <p class="small opacity-75 text-white">Developer & Student</p>
+
+                    <h3 class="fw-bold mt-2 text-white">
+                        LOUIS
+                    </h3>
+
+                    <p class="small opacity-75 text-white">
+                        Developer & Student
+                    </p>
                 </div>
 
+                <!-- Navegação -->
                 <nav class="sidebar-nav">
-                    <a href="#home" class="nav-item"><i class="fa-solid fa-house"></i> <span>Home</span></a>
-                    <a href="#sobre" class="nav-item"><i class="fa-solid fa-address-card"></i> <span>Sobre</span></a>
-                    <a href="#projetos" class="nav-item"><i class="fa-solid fa-code"></i> <span>Projetos</span></a>
-                    <a href="#skills" class="nav-item"><i class="fa-solid fa-layer-group"></i> <span>Skills</span></a>
+
+                    <a href="#home" class="nav-item">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+
+                    <a href="#sobre" class="nav-item">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span>Sobre</span>
+                    </a>
+
+                    <a href="#projetos" class="nav-item">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Projetos</span>
+                    </a>
+
+                    <a href="#skills" class="nav-item">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>Skills</span>
+                    </a>
 
                     <hr class="mx-3 opacity-25">
 
-                    <a href="https://github.com/eolouiszz" target="_blank" class="nav-item">
-                        <i class="fa-brands fa-github"></i> <span>GitHub</span>
-                    </a>
-                    <a href="https://www.instagram.com/lou1sdeb/" target="_blank" class="nav-item">
-                        <i class="fa-brands fa-instagram"></i> <span>Instagram</span>
+                    <a href="https://github.com/eolouiszz"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="nav-item">
+
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
                     </a>
                 </nav>
             </div>
         </aside>
 
+        <!-- Conteúdo -->
         <main class="content-area">
 
+            <!-- HOME -->
             <section id="home" class="section-padding pt-md-0 pt-5">
+
                 <header class="content-header mb-4">
-                    <h2 class="fw-bold">Dashboard Overview</h2>
+                    <h2 class="fw-bold">
+                        Dashboard Overview
+                    </h2>
                 </header>
+
                 <div class="stats-grid">
+
                     <div class="stat-card glass">
                         <img src="https://github-readme-streak-stats.herokuapp.com/?user=eolouiszz&theme=tokyonight&hide_border=true"
-                            class="stats-img" alt="Streak">
+                            class="stats-img"
+                            alt="GitHub Streak">
                     </div>
+
                     <div class="stat-card glass">
                         <img src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=eolouiszz&layout=compact&theme=tokyonight&hide_border=true"
-                            class="stats-img" alt="Langs">
+                            class="stats-img"
+                            alt="Top Languages">
                     </div>
                 </div>
             </section>
 
+            <!-- SOBRE -->
             <section id="sobre" class="section-padding scroll-margin">
+
                 <div class="glass p-4">
-                    <h3 class="fw-bold"><i class="fa-solid fa-user-tag me-2 text-primary"></i> Sobre Mim</h3>
+
+                    <h3 class="fw-bold">
+                        <i class="fa-solid fa-user-tag me-2 text-primary"></i>
+                        Sobre Mim
+                    </h3>
+
                     <div class="mt-3">
-                        <p>Olá, eu sou <strong>Louis</strong> 👋.</p>
-                        <p>Sou desenvolvedor focado em <strong>Front-end, Back-end, APIs e Cybersegurança</strong>.</p>
+
+                        <p>
+                            Olá, eu sou <strong>Louis</strong> 👋
+                        </p>
+
+                        <p>
+                            Sou desenvolvedor focado em
+                            <strong>
+                                Front-end, Back-end, APIs e Cybersegurança
+                            </strong>.
+                        </p>
                     </div>
                 </div>
             </section>
 
+            <!-- PROJETOS -->
             <section id="projetos" class="section-padding scroll-margin">
+
                 <div class="glass p-4">
-                    <h3 class="mb-4 fw-bold"><i class="fa-solid fa-folder-open me-2 text-primary"></i> Projetos</h3>
+
+                    <h3 class="mb-4 fw-bold">
+                        <i class="fa-solid fa-folder-open me-2 text-primary"></i>
+                        Projetos
+                    </h3>
+
                     <div class="row g-3">
+
                         <div class="col-6 col-md-3">
-                            <a href="https://crud-louis.onrender.com/" target="_blank"
+
+                            <a href="https://crud-louis.onrender.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 class="project-card d-flex flex-column align-items-center text-decoration-none py-3 text-center">
+
                                 <i class="fa-solid fa-database mb-2 text-primary"></i>
-                                <span class="small fw-bold">CRUD</span>
+
+                                <span class="small fw-bold">
+                                    CRUD
+                                </span>
                             </a>
                         </div>
+
                         <div class="col-6 col-md-3">
-                            <a href="https://todo-louis.vercel.app/" target="_blank"
+
+                            <a href="https://todo-louis.vercel.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 class="project-card d-flex flex-column align-items-center text-decoration-none py-3 text-center">
+
                                 <i class="fa-solid fa-list-check mb-2 text-success"></i>
-                                <span class="small fw-bold">ToDo List</span>
+
+                                <span class="small fw-bold">
+                                    ToDo List
+                                </span>
                             </a>
                         </div>
+
                         <div class="col-6 col-md-3">
-                            <a href="https://clima-louis.onrender.com/" target="_blank"
+
+                            <a href="https://clima-louis.onrender.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 class="project-card d-flex flex-column align-items-center text-decoration-none py-3 text-center">
+
                                 <i class="fa-solid fa-cloud-sun mb-2 text-info"></i>
-                                <span class="small fw-bold">Clima</span>
+
+                                <span class="small fw-bold">
+                                    Clima
+                                </span>
                             </a>
                         </div>
+
                         <div class="col-6 col-md-3">
-                            <a href="https://contador-js-psi.vercel.app/" target="_blank"
+
+                            <a href="https://contador-js-psi.vercel.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 class="project-card d-flex flex-column align-items-center text-decoration-none py-3 text-center">
+
                                 <i class="fa-solid fa-stopwatch mb-2 text-warning"></i>
-                                <span class="small fw-bold">Contador</span>
+
+                                <span class="small fw-bold">
+                                    Contador
+                                </span>
                             </a>
                         </div>
                     </div>
                 </div>
             </section>
 
+            <!-- SKILLS -->
             <section id="skills" class="section-padding scroll-margin">
+
                 <div class="glass p-4">
-                    <h3 class="fw-bold"><i class="fa-solid fa-microchip me-2 text-primary"></i> Tech Stack & Tools</h3>
+
+                    <h3 class="fw-bold">
+                        <i class="fa-solid fa-microchip me-2 text-primary"></i>
+                        Tech Stack & Tools
+                    </h3>
 
                     <div class="row g-5 mt-2">
+
+                        <!-- ESQUERDA -->
                         <div class="col-lg-7">
+
+                            <!-- Linguagens -->
                             <div class="skill-group mb-5">
-                                <h6 class="text-muted small text-uppercase fw-bold border-bottom pb-2">Linguagens &
-                                    Frameworks</h6>
+
+                                <h6 class="text-muted small text-uppercase fw-bold border-bottom pb-2">
+                                    Linguagens & Frameworks
+                                </h6>
+
                                 <div class="icons-row">
+
                                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
                                         title="JavaScript">
+
                                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
                                         title="Python">
+
                                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
                                         title="Java">
+
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg"
                                         title="Lua">
+
                                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
                                         title="React">
+
                                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg"
                                         title="Bootstrap">
+
                                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg"
-                                        title="Flask" class="icon-dark">
+                                        title="Flask"
+                                        class="icon-dark">
                                 </div>
                             </div>
 
+                            <!-- Ferramentas -->
                             <div class="skill-group mb-5">
-                                <h6 class="text-muted small text-uppercase fw-bold border-bottom pb-2">Ferramentas &
-                                    Design</h6>
+
+                                <h6 class="text-muted small text-uppercase fw-bold border-bottom pb-2">
+                                    Ferramentas & Design
+                                </h6>
+
                                 <div class="icons-row">
+
                                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
                                         title="Git">
+
                                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/blender/blender-original.svg"
                                         title="Blender">
+
                                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-plain.svg"
                                         title="Photoshop">
+
                                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sqlite/sqlite-original.svg"
                                         title="SQLite">
+
                                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
                                         title="Linux">
+
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/debian/debian-original.svg"
                                         title="Debian">
+
                                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"
                                         title="VS Code">
                                 </div>
                             </div>
 
+                            <!-- Cyber -->
                             <div class="skill-group">
-                                <h6 class="text-muted small text-uppercase fw-bold border-bottom pb-2">Cybersecurity &
-                                    Pentest</h6>
+
+                                <h6 class="text-muted small text-uppercase fw-bold border-bottom pb-2">
+                                    Cybersecurity & Pentest
+                                </h6>
+
                                 <div class="icons-row">
-                                    <img src="https://img.icons8.com/?size=96&id=9b5wowKIlo9d&format=png" title="Nmap">
+
+                                    <img src="https://img.icons8.com/?size=96&id=9b5wowKIlo9d&format=png"
+                                        title="Nmap">
+
                                     <img src="https://img.icons8.com/?size=96&id=97AFS4JiW8vx&format=png"
                                         title="Metasploit">
+
                                     <img src="https://images.icon-icons.com/3053/PNG/512/burp_suite_macos_bigsur_icon_190319.png"
                                         title="Burp Suite">
-                                    <img src="https://www.kali.org/tools/nikto/images/nikto-logo.svg" title="Nikto">
-                                    <img src="https://ubuntuhandbook.org/wp-content/uploads/2025/02/wireshark-logo-1.webp"
-                                        title="Wireshark">
+
+                                    <img src="https://www.kali.org/tools/nikto/images/nikto-logo.svg"
+                                        title="Nikto">
                                 </div>
                             </div>
                         </div>
 
+                        <!-- DIREITA -->
                         <div class="col-lg-5">
-                            <h6 class="text-muted small text-uppercase fw-bold mb-3">Roadmap / Foco</h6>
+
+                            <h6 class="text-muted small text-uppercase fw-bold mb-3">
+                                Roadmap / Foco
+                            </h6>
+
                             <div class="roadmap-grid">
+
                                 <div class="roadmap-item">
+
                                     <i class="fa-solid fa-check-circle text-success"></i>
-                                    <div><span class="d-block fw-bold small">Finalizado</span><span
-                                            class="text-muted extra-small">Rede de computadores e Cybersegurança/span>
+
+                                    <div>
+
+                                        <span class="d-block fw-bold small">
+                                            Finalizado
+                                        </span>
+
+                                        <span class="text-muted extra-small">
+                                            Photoshop, Blender e Roblox Studio
+                                        </span>
+
+                                        <br>
+
+                                        <span class="text-muted extra-small">
+                                            Dei uma pausa com gamedev por causa da escola,
+                                            vou terminar desenvolvimento web e depois voltar.
+                                        </span>
                                     </div>
                                 </div>
+
                                 <div class="roadmap-item">
+
                                     <i class="fa-solid fa-circle-notch fa-spin text-primary"></i>
-                                    <div><span class="d-block fw-bold small">Estudando</span><span
-                                            class="text-muted extra-small">Photoshop, Blender e
-                                            RobloxStudios(Luau)</span></div>
+
+                                    <div>
+
+                                        <span class="d-block fw-bold small">
+                                            Estudando
+                                        </span>
+
+                                        <span class="text-muted extra-small">
+                                            React, Bootstrap e TypeScript
+                                        </span>
+                                    </div>
                                 </div>
+
                                 <div class="roadmap-item">
+
                                     <i class="fa-solid fa-bullseye text-danger"></i>
-                                    <div><span class="d-block fw-bold small">Próximo Alvo</span><span
-                                            class="text-muted extra-small">Desenvolvimento Web completo</span></div>
+
+                                    <div>
+
+                                        <span class="d-block fw-bold small">
+                                            Próximo Alvo
+                                        </span>
+
+                                        <span class="text-muted extra-small">
+                                            Java, Spring Boot e PostgreSQL (backend)
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -216,6 +421,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 
+</body>
 </html>
