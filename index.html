@@ -43,7 +43,6 @@
 
     <div class="dashboard-container">
 
-        <!-- Sidebar -->
         <aside class="offcanvas-md offcanvas-start sidebar text-bg-dark"
             tabindex="-1"
             id="sidebarMenu">
@@ -62,8 +61,6 @@
             </div>
 
             <div class="sidebar-content">
-
-                <!-- Perfil -->
                 <div class="profile-section">
 
                     <img class="avatar"
@@ -79,7 +76,6 @@
                     </p>
                 </div>
 
-                <!-- Navegação -->
                 <nav class="sidebar-nav">
 
                     <a href="#home" class="nav-item">
@@ -116,10 +112,7 @@
             </div>
         </aside>
 
-        <!-- Conteúdo -->
         <main class="content-area">
-
-            <!-- HOME -->
             <section id="home" class="section-padding pt-md-0 pt-5">
 
                 <header class="content-header mb-4">
@@ -171,79 +164,45 @@
             </section>
 
             <!-- PROJETOS -->
-            <section id="projetos" class="section-padding scroll-margin">
+<section id="projetos" class="section-padding scroll-margin">
+    <div class="glass p-4">
+        <h3 class="mb-4 fw-bold">
+            <i class="fa-solid fa-folder-open me-2 text-primary"></i>
+            Projetos
+        </h3>
 
-                <div class="glass p-4">
+        <!-- Trocado 'row g-3' por 'projects-grid' -->
+        <div class="projects-grid"> 
 
-                    <h3 class="mb-4 fw-bold">
-                        <i class="fa-solid fa-folder-open me-2 text-primary"></i>
-                        Projetos
-                    </h3>
+            <!-- Removidas as divs 'col-6 col-md-3' de todos os cards -->
+            <a href="https://crud-louis.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-card d-flex flex-column align-items-center text-decoration-none py-3 text-center">
+                <i class="fa-solid fa-database mb-2 text-primary"></i>
+                <span class="small fw-bold">CRUD</span>
+            </a>
 
-                    <div class="row g-3">
+            <a href="https://github.com/eolouiszz/ToDo-Louis"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-card d-flex flex-column align-items-center text-decoration-none py-3 text-center">
+                <i class="fa-solid fa-list-check mb-2 text-success"></i>
+                <span class="small fw-bold">ToDo List</span>
+            </a>
 
-                        <div class="col-6 col-md-3">
+            <a href="https://github.com/eolouiszz/ContadorJS"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-card d-flex flex-column align-items-center text-decoration-none py-3 text-center">
+                <i class="fa-solid fa-stopwatch mb-2 text-warning"></i>
+                <span class="small fw-bold">Contador</span>
+            </a>
 
-                            <a href="https://crud-louis.onrender.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-card d-flex flex-column align-items-center text-decoration-none py-3 text-center">
+        </div>
+    </div>
+</section>
 
-                                <i class="fa-solid fa-database mb-2 text-primary"></i>
-
-                                <span class="small fw-bold">
-                                    CRUD
-                                </span>
-                            </a>
-                        </div>
-
-                        <div class="col-6 col-md-3">
-
-                            <a href="https://todo-louis.vercel.app/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-card d-flex flex-column align-items-center text-decoration-none py-3 text-center">
-
-                                <i class="fa-solid fa-list-check mb-2 text-success"></i>
-
-                                <span class="small fw-bold">
-                                    ToDo List
-                                </span>
-                            </a>
-                        </div>
-
-                        <div class="col-6 col-md-3">
-
-                            <a href="https://clima-louis.onrender.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-card d-flex flex-column align-items-center text-decoration-none py-3 text-center">
-
-                                <i class="fa-solid fa-cloud-sun mb-2 text-info"></i>
-
-                                <span class="small fw-bold">
-                                    Clima
-                                </span>
-                            </a>
-                        </div>
-
-                        <div class="col-6 col-md-3">
-
-                            <a href="https://contador-js-psi.vercel.app/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-card d-flex flex-column align-items-center text-decoration-none py-3 text-center">
-
-                                <i class="fa-solid fa-stopwatch mb-2 text-warning"></i>
-
-                                <span class="small fw-bold">
-                                    Contador
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             <!-- SKILLS -->
             <section id="skills" class="section-padding scroll-margin">
