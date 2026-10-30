@@ -1,0 +1,239 @@
+
+/* ========================================
+   RICK AND MORTY PORTALS BACKGROUND
+======================================== */
+
+.portal-background {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ========================================
+   BASE PORTAL
+======================================== */
+
+.portal {
+    position: absolute;
+
+    width: var(--size);
+    height: var(--size);
+
+    left: var(--x);
+    top: var(--y);
+
+    background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDIxNW04aXd5M3ZmMWZjOWIxc3VrNWJrd2oyaGM4amQ5YmsxOWZhaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/5xXF4Vns7oC7dmfP0U/giphy.gif");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transform: translate(-50%, -50%) rotate(var(--rotation));
+
+    opacity: var(--opacity);
+    filter: blur(var(--blur));
+}
+
+/* ========================================
+   DISCRETE PORTALS (1–14)
+======================================== */
+
+.portal:nth-child(1) {
+    --x: 8%;
+    --y: 12%;
+    --size: 190px;
+    --rotation: -25deg;
+    --blur: 3px;
+    --opacity: .20;
+}
+
+.portal:nth-child(2) {
+    --x: 85%;
+    --y: 18%;
+    --size: 230px;
+    --rotation: 35deg;
+    --blur: 4px;
+    --opacity: .18;
+}
+
+.portal:nth-child(3) {
+    --x: 48%;
+    --y: 8%;
+    --size: 150px;
+    --rotation: 15deg;
+    --blur: 5px;
+    --opacity: .14;
+}
+
+.portal:nth-child(4) {
+    --x: 15%;
+    --y: 48%;
+    --size: 250px;
+    --rotation: 70deg;
+    --blur: 4px;
+    --opacity: .16;
+}
+
+.portal:nth-child(5) {
+    --x: 92%;
+    --y: 55%;
+    --size: 180px;
+    --rotation: -40deg;
+    --blur: 3px;
+    --opacity: .20;
+}
+
+.portal:nth-child(6) {
+    --x: 65%;
+    --y: 35%;
+    --size: 140px;
+    --rotation: 20deg;
+    --blur: 6px;
+    --opacity: .12;
+}
+
+.portal:nth-child(7) {
+    --x: 35%;
+    --y: 75%;
+    --size: 220px;
+    --rotation: -15deg;
+    --blur: 4px;
+    --opacity: .17;
+}
+
+.portal:nth-child(8) {
+    --x: 75%;
+    --y: 88%;
+    --size: 200px;
+    --rotation: 55deg;
+    --blur: 5px;
+    --opacity: .15;
+}
+
+.portal:nth-child(9) {
+    --x: 5%;
+    --y: 90%;
+    --size: 160px;
+    --rotation: 30deg;
+    --blur: 3px;
+    --opacity: .19;
+}
+
+.portal:nth-child(10) {
+    --x: 55%;
+    --y: 60%;
+    --size: 240px;
+    --rotation: -55deg;
+    --blur: 5px;
+    --opacity: .13;
+}
+
+.portal:nth-child(11) {
+    --x: 95%;
+    --y: 5%;
+    --size: 170px;
+    --rotation: 80deg;
+    --blur: 4px;
+    --opacity: .16;
+}
+
+.portal:nth-child(12) {
+    --x: 25%;
+    --y: 25%;
+    --size: 130px;
+    --rotation: -10deg;
+    --blur: 6px;
+    --opacity: .12;
+}
+
+.portal:nth-child(13) {
+    --x: 80%;
+    --y: 70%;
+    --size: 210px;
+    --rotation: 45deg;
+    --blur: 4px;
+    --opacity: .18;
+}
+
+.portal:nth-child(14) {
+    --x: 45%;
+    --y: 95%;
+    --size: 180px;
+    --rotation: -35deg;
+    --blur: 5px;
+    --opacity: .15;
+}
+
+/* ========================================
+   HIGHLIGHTED PORTALS (15–22)
+======================================== */
+
+.portal-highlight {
+    opacity: .28;
+    filter: blur(2px);
+}
+
+.portal-highlight:nth-child(15) {
+    --x: 12%;
+    --y: 30%;
+    --size: 280px;
+    --rotation: 25deg;
+}
+
+.portal-highlight:nth-child(16) {
+    --x: 88%;
+    --y: 35%;
+    --size: 260px;
+    --rotation: -30deg;
+}
+
+.portal-highlight:nth-child(17) {
+    --x: 40%;
+    --y: 20%;
+    --size: 220px;
+    --rotation: 60deg;
+}
+
+.portal-highlight:nth-child(18) {
+    --x: 60%;
+    --y: 80%;
+    --size: 300px;
+    --rotation: -45deg;
+}
+
+.portal-highlight:nth-child(19) {
+    --x: 20%;
+    --y: 85%;
+    --size: 240px;
+    --rotation: 15deg;
+}
+
+.portal-highlight:nth-child(20) {
+    --x: 75%;
+    --y: 10%;
+    --size: 210px;
+    --rotation: 90deg;
+}
+
+.portal-highlight:nth-child(21) {
+    --x: 50%;
+    --y: 50%;
+    --size: 180px;
+    --rotation: -20deg;
+}
+
+.portal-highlight:nth-child(22) {
+    --x: 95%;
+    --y: 95%;
+    --size: 250px;
+    --rotation: 40deg;
+}
+
+/* ========================================
+   CONTENT LAYER
+======================================== */
+
