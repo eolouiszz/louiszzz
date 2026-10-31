@@ -165,18 +165,16 @@ body {
 /* Changelog */
 
 .changelog {
-    position: fixed;            
-    top: 15px;                  
-    right: 3.5%;                
+    position: fixed;
+    top: 15px;
+    right: 3.5%;
     z-index: 1100;
-}       
+}
 
 .changelog-trigger {
     display: flex;
     align-items: center;
     gap: 7px;
-    cursor: pointer;
-    list-style: none;
     color: var(--text-main);
     font-size: 0.85rem;
     font-weight: 700;
@@ -186,20 +184,7 @@ body {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(8px);
     transition: var(--transition);
-}
-
-.changelog-trigger::-webkit-details-marker {
-    display: none;
-}
-.changelog[open] .changelog-trigger {
-    border-color: var(--accent);
-    background: white;
-}
-
-.changelog-trigger:hover {
-    background: white;
-    border-color: var(--accent);
-    transform: translateY(-2px);
+    white-space: nowrap;
 }
 
 .changelog-trigger i {
@@ -212,65 +197,32 @@ body {
     font-weight: 500;
 }
 
-.changelog-panel {
-    position: absolute;
-    top: calc(100% + 8px);
-    right: 0;
-    width: min(290px, calc(100vw - 40px));
-    padding: 16px;
-    background: white;
-    border: 1px solid var(--glass-border);
-    border-radius: 14px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-.changelog-panel h6{
-    font-size: 0.9rem;
-    margin-top: 0;
-}
-
-.changelog-entry {
-    border-left: 2px solid var(--accent);
-    padding-left: 12px;
-}
-
-.changelog-version {
-    display: block;
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: var(--accent);
-    margin-bottom: 8px;
-}
-
-.changelog-entry p {
-    font-size: 0.78rem;
-    color: #667;
-    margin-bottom: 6px;
-}
-
 
 /* GitHub Stats */
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 14px;
-}
-
-.stat-card {
-    padding: 12px;
-    display: flex;
-    justify-content: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
     align-items: center;
 }
 
-.stats-img {
-    width: 100% !important;
-    height: 195px !important;
-    object-fit: cover; 
-    border-radius: 12px;
+.stat-card {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
 }
 
+.stats-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
 
 /* Projects */
 
@@ -406,75 +358,34 @@ body {
     padding: 5px 9px;
     max-width: 100%;
 }
-
-.changelog-panel {
-    position: absolute;
-    top: calc(100% + 8px);
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
-    width: min(290px, calc(100vw - 30px));
-    max-width: calc(100vw - 30px);
-    box-sizing: border-box;
-    padding: 12px;
-}
-
 }
 
 @media (min-width: 768px) and (max-width: 850px) {
 
     .changelog {
-        position: fixed;
-        top: 2px;
-        right: 16px; 
-        left: auto;
-        transform: none;
-        width: auto;
-        z-index: 1067;
-    }
+    position: fixed;
+    top: 2px;
+    right: 16px;
+    left: auto;
+    transform: none;
+    width: auto;
+    z-index: 1067;
+}
 
-    .changelog-trigger {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        padding: 6px 12px;
-        font-size: 0.85rem;
-        white-space: nowrap;
-        cursor: pointer;
-    }
+.changelog-trigger {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
 
-    /* Remove a seta padrão do elemento <summary> */
-    .changelog-trigger::-webkit-details-marker,
-    .changelog-trigger {
-        list-style: none;
-    }
+.stats-grid {
+    grid-template-columns: 1fr;
+}
 
-    /* Esconde cirurgicamente apenas a data no tablet */
-    .changelog-trigger .changelog-date {
-        display: none !important;
-    }
-
-    /* Alinha e posiciona o painel de forma previsível à direita */
-    .changelog-panel {
-        position: absolute;
-        top: calc(100% + 8px);
-        right: 0;
-        left: auto;
-        transform: none;
-        width: 280px; 
-        box-sizing: border-box;
-    }
-
-    .changelog-panel::before {
-    content: "Updated: 30/10/2026 · 20:36 BRT";
-    display: block;
-    color: #777;
-    font-size: 0.72rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-    }
-
-    .stats-grid {
-        grid-template-columns: 1fr;
-    }
+.update-time {
+    display: none;
+}
 }
